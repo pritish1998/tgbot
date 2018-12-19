@@ -22,7 +22,7 @@ PM_START_TEXT = """
 Hi {}, my name is {}! If you have any questions on how to use me, read /help - and then head to @MarieSupport.
 
 I'm a group manager bot built in python3, using the python-telegram-bot library, and am fully opensource; \
-you can find what makes me tick [here](github.com/PaulSonOfLars/tgbot)!
+you can find what makes me tick [here](github.com/pritish1998/tgbot)!
 
 Feel free to submit pull requests on github, or to contact my support group, @MarieSupport, with any bugs, questions \
 or feature requests you might have :)
@@ -444,7 +444,7 @@ def main():
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="127.0.0.1",
+        updater.start_webhook(listen="0.0.0.0",
                               port=PORT,
                               url_path=TOKEN)
 
